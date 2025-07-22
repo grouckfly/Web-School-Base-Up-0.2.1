@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Sekolah Anda</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <h1>Selamat Datang di Website Sekolah Kami</h1>
+    </div>
+
+    <header>
+        <div class="logo">
+            <a href="#">Nama Sekolah</a>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <button id="dark-mode-toggle" class="fas fa-moon"></button>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="section">
+        <div class="content">
+            <h1>Pendidikan Berkualitas untuk Masa Depan Cerah</h1>
+            <p>Bergabunglah dengan kami untuk meraih prestasi.</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="content">
+            <h2>Tentang Kami</h2>
+            <p>Sekolah kami berkomitmen untuk menyediakan lingkungan belajar yang inspiratif dan mendukung perkembangan setiap siswa.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="content">
+            <h2>Galeri Kegiatan</h2>
+            <div class="gallery-container">
+                <div class="slide">
+                    <img src="images/gallery1.jpg" alt="Foto Kegiatan 1">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery2.jpg" alt="Foto Kegiatan 2">
+                </div>
+                <div class="slide">
+                    <img src="images/gallery3.jpg" alt="Foto Kegiatan 3">
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="content">
+            <h2>Hubungi Kami</h2>
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h3>Kirim Pertanyaan</h3>
+                    <form id="contactForm">
+                        <input type="text" id="nama" placeholder="Nama Anda" required>
+                        <input type="email" id="email" placeholder="Email Anda" required>
+                        <input type="text" id="telp" placeholder="No. Telp Anda" required>
+                        <textarea id="pesan" rows="5" placeholder="Pesan Anda" required></textarea>
+                        <div class="form-buttons">
+                           <button type="submit" class="btn-kirim">Kirim via Email</button>
+                           <button type="button" id="send-whatsapp" class="btn-kirim wa">Kirim via WhatsApp</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <h3>Lokasi Kami</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.125667357033!2d112.6015523153321!3d-7.9852936942484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788274e9c6f217%3A0x42f881260a9f534!2sUniversitas%20Brawijaya!5e0!3m2!1sen!2sid!4v1690000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nama Sekolah. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
